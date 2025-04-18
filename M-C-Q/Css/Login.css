@@ -1,0 +1,280 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600;700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root {
+    /* colors */
+    --body-color: #dadada;
+    --sidebar-color: #fff;
+    --primary-color: #97144d;
+    --secondary-color: #ddd;
+    --primary-color-light: #f6f5ff;
+    --text-color: #000;
+    /* Transitions */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+.swal2-popup .swal2-styled:focus {
+    /*box-shadow: none !important;*/
+    box-shadow: 0 0 0 3px rgb(255, 165, 210);
+}
+.swal2-success .swal2-success-ring{
+    color: var(--primary-color);
+}
+.swal2-popup .swal2-styled {
+    background: var(--primary-color);
+}
+.main {
+    background: url(../Img/Login-background7.jpg)no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.left {
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 22rem;
+    background-color: #ffffff;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*box-shadow: 0 0 0 2.5px black;*/
+}
+
+.right {
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 27rem;
+    background-color: #fff;
+    border: 1.5px solid var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    width: 80%;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.formbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75%;
+}
+
+.heading {
+    height: 2.3rem;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border-bottom: 1px solid blueviolet;
+    border-radius: 5px; */
+}
+
+.heading input {
+    width: 100%;
+    border: 1.5px solid blueviolet;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.heading h1 {
+    color: var(--primary-color);
+    /*color: #fff;*/
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif; 
+}
+
+.btnlogin {
+    background-color: blueviolet;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Lato', sans-serif; 
+}
+
+.btnlogin2 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btnSignup {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btnSignup2 {
+    background-color: blueviolet;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btnSignup:hover {
+    background-color: #dbbff6;
+}
+
+.btnlogin2:hover {
+    background-color: #dbbff6;
+}
+
+.lbl {
+    text-align: start;
+}
+
+.txt {
+    text-align: center;
+    width: 100%;
+}
+
+.txt input {
+    width: 100%;
+    padding: 4px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 5px;
+    /*background:#ccc;*/
+    /*box-shadow: 0 0 0 2px rgb(255, 165, 210);*/
+
+   /* box-shadow: 0px 0px 3px 2px rgba(151,20,77,0.75);
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(151,20,77,0.75);
+    -moz-box-shadow: 0px 0px 3px 2px rgba(151,20,77,0.75);*/
+
+   box-shadow: 0px 0px 2px 1px rgba(151,20,77,0.75) inset;
+   -webkit-box-shadow: 0px 0px 2px 1px rgba(151,20,77,0.75) inset;
+   -moz-box-shadow: 0px 0px 2px 1px rgba(151,20,77,0.75) inset;
+}
+
+.txt select {
+    width: 100%;
+    padding: 3px 0;
+    font-size: 17px;
+    border: 1.5px solid blueviolet;
+    border-radius: 5px;
+}
+
+.submit {
+    width: 100%;
+}
+
+.submit input {
+    width: 100%;
+    align-items: center;
+    padding: 4px 0;
+    background-color: var(--primary-color);
+    border:none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 2vh;
+   /* background: url(../Img/Login-background7.jpg)no-repeat center center fixed;
+    background-size: cover;
+    border:1.5px solid var(--primary-color);*/
+}
+ .submit input:hover {
+     background-color: #69022f;
+     transition: 0.5s ease-out;
+ }
+@keyframes pulse {
+0% {
+    transform: scale(1);
+}
+
+70% {
+    transform: scale(0.97);
+    /*border-right: 3px solid black;
+    border-bottom: 3px solid black;*/
+}
+
+100% {
+    transform: scale(1);
+}
+}
+
+input:focus {
+    /* animation: pulse 1s backwards;
+    transition: 0.5s ease-out;
+    box-shadow: 0 0 0 2px rgb(255, 165, 210);*/
+    
+    border:hidden;
+    /*border: 2px solid var(--primary-color);*/
+    box-shadow: 0px 0px 5px 4px rgba(151,20,77,0.75);
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(151,20,77,0.75);
+    -moz-box-shadow: 0px 0px 4px 5px rgba(151,20,77,0.75);
+    
+}
+
+.otherlinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.otherlinks a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.formbodyLoginAs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+}
+.btnSubmit {
+    width: 100%;
+    align-items: center;
+    padding: 5px 0;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+.btnSubmit:hover{
+    background-color: #69022f;
+     transition: 0.5s ease-out;
+}
+.heading h2 {
+    color: var(--primary-color);
+    font-size: 36px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+.mendatory-sign {
+    color: red;
+    font-family: 'Inter', sans-serif;
+}
